@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        display: inline-block;
+        background-color: aliceblue;
+        margin: 20px;
+        padding: 10px;
+      }
+      body {
+        background-color: antiquewhite;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h3>배열이란(Array)</h3>
+      같은 type의 변수가 다수 필요할때 사용하는 변수 type int intNum:정수형 변수
+      <br />
+
+      같은 type의 데이터를 다수(여러개) 변수에 저장하고 <br />
+      연산을 수행해야 할 경우 사용하는 데이터 저장 공간 <br />
+      변수를 여러개 선언하여 데이터를 저장하고 연산을 수행할수 있지만 여러가지
+      불편한 점이 많다. <br />
+      배열을 사용하면 index (첨자)를 사용하여 배열내의 각요소에
+      접근(읽고,저장)할수있다. <br />
+      <hr />
+      intNum라고 선언이라고하고 int[]intKor:정수형 배열 intKor 선언이라고한다<br />
+      <strong> intKor =new int[10]:</strong> 정수형 배열 intKor의 요소를 10개
+      생성하라 <br />
+      <strong> intNum1 =10:</strong>정수형 변수intNum에 정수10을 대입 <br />
+      <strong>intKor[3]=10:</strong>정수형 배열intKor의 3번째 요소에 정수10을
+      대입 <br />
+      <strong> sysout(intNum):</strong>정수형 변수intNum에 저장된 값을 console에
+      출력 <br />
+      <strong>sysout(intKor[3]):</strong>정수형 배열intKor의 3번(위치로4번째)<br />
+      요소에 저장된 값을 console 에 출력
+    </div>
+    <div>
+      int[] intKor이름으로 정수형 배열 선언 new int[100]개의 요소()저장공간을
+      <br />
+      생성하라 정수형 이기 때문에 모두 0으로 clear된다. <br />
+
+      <strong> int[] intKor = new int[100] ;</strong> <br />
+      <hr />
+      정수형 배열 intKor 의 3번 요소의 값을 console 에 출력 <br />
+      이때 3의 숫자를 "첨자"라고 부른다<br />
+      정수형 intKor의 첨자 3의 값을 console 에 출력<br />
+      <strong> System.out.println(intKor[3]);</strong> <br />
+
+      정수형 intㅏKor의 3번 요소에 100을 대입(저장 할당) <br />
+      <strong> intKor[3]= 100;</strong> <br />
+      <hr />
+      정수형 intKor 3번 요소의 값을 console 에 출력 <br />
+      <strong> System.out.println(intKor[3]);</strong>
+    </div>
+    <div>
+      <strong>
+        public class ServiceV3 {<br />
+        int[] intKor; <br />
+        int[] intEng;</strong
+      >
+
+      <br />
+
+      ServiceV3 클래스의 생성자 method return type이 아무것도 없다 method 이름이
+      <br />
+      클래스 이름과 같다(첫글자 대문자) 클래스를 선언하면 자동으로 생성되나<br />
+      코드는 보이지 않는다 <br />
+      만약MY()과 같은 코드를 만나면:My 클래스의 생성자 method라고 부른다
+      여기에서는 ServiceV3() 생성자 method를 코드로 선언할 것이다 <br />
+      왜~~ 생성자 method 에 intKor 배열을 생성하는 코드를 추가한다 <br />
+      생성자 method 는 클래스를 사용하여 인스턴스를 생성할때 반드시 의무적으로
+      호출해야 하는 method이다 <br />
+      이 method에 배열을 생성하는 코드를 추가하면 자동으로 intKor 배열이 사용할
+      준비가 된다. <br />
+      어떤 클래스를 사용하는데 꼭 필요한 변수가 있다할때 그변수의 초기화 생성
+      clear 필요한 값 저장을 하는 코드를 생성자에 주로 포함한다. <br />
+      <hr />
+      public ServiceV3() { <br />
+      intKor = new int[10];<br />
+      intEng=new int[10]; <br />
+      intKor[3] = 100;}<br />
+    </div>
+    <div>
+      <strong> int[]intNums= new int[10];</strong> <br />
+
+      정수형 배열 intNums 를 선언하고, 공간 10개를 확보하라 <br />
+      정수형 배열 10개짜리 intNums를 생성하라<br />
+      정수형 배열 intNums에는 정수를 10개 저장 할 수 있는 저장 공간이
+      생성된다.<br />
+      intNums 배열의 10개의 저장소는 0으로 clear 된 상태로 시작 <br />
+      <hr />
+      배열 각 요소에 값저장하기 <br />
+      <strong>
+        intNums[0]=10; <br />
+        intNums[1]=20; <br />
+        intNums[2]=30; <br />
+        intNums[3]=40; <br />
+        intNums[4]=50;<br />
+        intNums[9]=100;<br />
+        intNums[5]부터 intNums[8]까지는 0으로 clear 된 상태를 유지 <br />
+        <hr />
+        <strong>
+          int intSum = intNums[1]; <br />
+          intSum +=intNums[2]; <br />
+          intSum +=intNums[9]; <br
+        /></strong>
+        값은?150
+      </strong>
+    </div>
+    <div>
+      <strong> System.out.println(intNums.toString());</strong> <br />
+      print()method는 ()안에 데이터 type에 따라 작동하는 방식이 다르다. <br />
+
+      print(변수):변수에 저장된 값을 console 에 출력 <br />
+      print(연산):연산을 먼저 수행하고 연산 결과를 console에 출력 <br />
+      print(method()):method()실행하고 return된 결과를 console에 출력 <br />
+
+      print(객체,인스턴스):객체.toString(),인스턴스.toString()를 먼저 실행하고
+      return 문자열 결과를 Console에 출력 <br />
+      단,method()가 void type 인 경우는 오류가 난다. <br />
+
+      print(배열):배열.toString()을 먼저 실행하고 return된 기억장소 주소를
+      console 에 출력
+    </div>
+    <div>
+      배열의 개수를 3개로 선언하면
+		첨자(index)는 항상 배열의 개수-1까지다. <br>
+	
+		index < length: index 와 length는 항상 0보다 큰 정수이다 <br>
+	<strong>	int[] intNums= new int[3]; <br>
+		intNums[0]=10; <br>
+		intNums[1]=20;<br>
+		intNums[2]=30; <strong><br>
+		배열의 개수는(length)가 3이인데 첨자(index) 3번에 값을 저장하려고<br>
+		시도를 하면 ArryOutofBound 문재(exception,예외)가발생한다	 <br>	
+   <span style="color: red;"> //intNums[3]=40;// </span>
+    </div> 
+    <div>
+      public class ScoreServiceV1 {
+
+        class영역에 선언된 변수
+        ScoreServiceV1 클래스에 선언된 모든 method 에서
+        변수에 접근(읽고 ,저장)할수있다
+        인스턴스 변수:
+        ScoreServiceV1 클래스를 사용하여 인스턴스를 생성할때
+        (자동으로) 초기화 되는 변수다
+        int[] intKor; // 선언만 된 정수형 배열
+
+             ScoreServiceV1 클래스를 초기화할 생성자 메서드 선언 생성자 메서드는
+          클래스를 선언하면 클래스 블럭({})내부에 자동으로
+         선언된다 자동으로 선언된 생성자 메서드는 코드상에는 보이지 않는다 
+         임의로 생성자 메서드를 선언하는 이유 1.클래스 영역에 선언된 변수를
+         초기화 하여 사용할 수 있도록 준비하는 코드가 포함한다
+           
+        
+      
+        public ScoreServiceV1() {
+          intKor = new int[100];// intKor 배열이 사용할(저장,읽기) 준비가 된다.
+        }
+      
+        public void makeScore() {
+          for (int i = 0; i < intKor.length; i++) {
+            /*
+             * random()*50을 연산하면 0~49까지 범위의 임의 수가 생성된다 여기에 +51을 하면 0일떄는
+             * 51, 49일떄는 100의 결과가
+             * 생성된다 그래서 51~100까지의 범위에서 임의 수를 생성하는 코드
+             */
+            intKor[i] = (int)(Math.random() * 50) + 51;// 51~100점까지범위
+          }
+        }
+      
+        public void printSocre() {
+          /*
+           * Line클래스에 선언된 dLine 속성 은 static 이기 떄문에
+           * Line 클래스를  line 인스턴스로 만들고 line.dLine 처럼
+           * 접근할 필요가 없다
+           * ,Line line =new Line();
+           * system.out.println(line.dLine);
+           */
+          
+          //Line.dLine="*".repeat(100); 안됨
+          System.out.println(Line.dLine);
+          System.out.println("국어 성적 일람표");
+          System.out.println(Line.sLine);
+          
+          for(int i =0;i<intKor.length;i++){
+            System.out.printf("%d\t",intKor[i]);
+            if((i+1)%5==0) {
+              System.out.println();
+            }
+          }
+          System.out.println(Line.dLine);
+        }
+      
+      }
+    </div>
+  </body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+body {
+	margin: 0;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+header {
+	min-width: 1200px;
+	border-bottom: 1px solid #aaa;
+	background-color: yellow;
+}
+
+header nav {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+header nav >ul{
+	display: inline-block;
+	margin: 20px 0;
+}
+#category >li{
+	float: left;
+	}
+#category >li:not(:first-child) {
+	margin-left: 100px
+}
+#category .menu:hover + .submenu{
+transform:scaleY(1);
+}
+#category .submenu  ul{
+	width:200px;
+	margin: 20px 0px;
+	display: inline-block;
+}
+#category .submenu  li:not(:first-child){
+	margin-top:10px;
+}
+.menu{font-size:20px}
+
+</style>
+</head>
+<body>
+	<a href='index.html'>홈으로</a>
+	<header>
+		<nav>
+			<ul id='category'>
+				<li><a class='menu'>훈련과정</a>
+					<div class='submenu'>
+						<ul>
+							<li><a>국민 내일배움카드 훈련과정</a></li>
+							<li><a>k-디지털 트레이닝</a></li>
+							<li><a>k-디지털 기초역량 훈련</a></li>
+						</ul>
+						<ul>
+							<li><a>기업훈련과정</a></li>
+							<li><a>일학습병행과정</a></li>
+							<li><a>정부부 처별 훈련과정</a></li>
+						</ul>
+						<ul>
+							<li><a>유관기관 훈련과정</a></li>
+							<li><a>STEP이러닝</a></li>
+						</ul>
+					</div></li>
+				<li ><a class='menu'>지원제도</a>
+					<div  class='submenu'>
+						<ul>
+							<li><a>정부지원사업안내</a></li>
+							<li><a>범부처 신기술 훈련사업</a></li>
+							<li><a>정부부처별 지원사업안내</a></li>
+						</ul>
+						<ul>
+							<li><a>법령/서식/규정</a></li>
+							<li><a>일학습병행과정</a></li>
+							<li><a>정부부 처별 훈련과정</a></li>
+						</ul>
+						<ul>
+							<li><a>일학습병행</a></li>
+							<li><a></a></li>
+						</ul>
+					</div></li>
+				<li ><a class='menu'>일자리직업정보</a>
+					<div  class='submenu'>
+						<ul>
+							<li><a>구인정보</a></li>
+							<li><a>자격정보</a></li>
+							<li><a>k-디지털 기초역량 훈련</a></li>
+						</ul>
+						<ul>
+							<li><a>직업사전</a></li>
+							<li><a></a></li>
+							<li><a></a></li>
+						</ul>
+						<ul>
+							<li><a>학과정보</a></li>
+							<li><a>NCS분류체계</a></li>
+						</ul>
+					</div></li>
+				<li ><a class='menu'>지식정보센터</a>
+					<div  class='submenu'>
+						<ul>
+							<li><a>인재뱅크</a></li>
+							<li><a>스타훈련교사</a></li>
+							<li><a></a></li>
+						</ul>
+						<ul>
+							<li><a>훈련기관평가정보</a></li>
+							<li><a></a></li>
+							<li><a></a></li>
+						</ul>
+						<ul>
+							<li><a>훈련/고용통계</a></li>
+							<li><a></a></li>
+						</ul>
+					</div></li>
+			</ul>
+		</nav>
+	</header>
+</body>
+</html>

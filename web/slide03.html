@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+img {
+	width: 300px;
+	height: 200px
+}
+
+#transform .slide {
+	transition-property: transform;
+	transition-duration: 16s;
+	transition-delay: 1s;
+		 transition-timing-function:linear;	  
+/* 	transition-timing-function: steps(4, start); */
+}
+
+#transform .slide:hover {
+	transform: translateX(-1280px);
+}
+
+#transform2 .slide-wrap {
+	width: 980px;
+}
+
+#transform2 .slide {
+	transition-property: transform;
+	transition-duration: 16s;
+	transition-delay: 1s;
+	transition:tranform 9s steps(3,start)2s;
+}
+#transform2 .slide:hover{transform:translateX(-960px)}
+</style>
+<link rel='stylesheet' href='slide.css'>
+
+</head>
+<body>
+	<a href='index.html'>홈으로</a>
+	<h3>이미지 이동 실습</h3>
+	<div id='transform'>
+		<div class='slide-wrap'>
+			<div class='slide'>
+				<ul>
+					<li><img src='이미지1.webp'></li>
+					<li><img src='이미지2.webp'></li>
+					<li><img src='이미지3.webp'></li>
+					<li><img src='이미지6.webp'></li>
+					<li><img src=' 이미지4.jpg'></li>
+					<li><img src=' 이미지5.jpg'></li>
+				</ul>
+
+			</div>
+
+		</div>
+
+
+	</div>
+	<div id='transform2'>
+		<div class='slide-wrap'>
+			<div class='slide'>
+				<ul>
+					<li><img src='이미지1.webp'></li>
+					<li><img src='이미지2.webp'></li>
+					<li><img src='이미지3.webp'></li>
+					<li><img src='이미지6.webp'></li>
+					<li><img src=' 이미지4.jpg'></li>
+					<li><img src=' 이미지5.jpg'></li>
+				</ul>
+
+			</div>
+
+		</div>
+
+
+	</div>
+
+</body>
+</html>

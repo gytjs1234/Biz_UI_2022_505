@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>선택자스타일</title>
+    <link rel="stylesheet" href="../css/common.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Cute+Font&display=swap");
+      body {
+        font-family: "Cute Font", cursive;
+      }
+
+      * {
+        font-size: 30px;
+      }
+      table {
+        width: 700px;
+      }
+      #text {
+        color: red;
+      }
+      #dd {
+        font-size: 20px;
+      }
+      .eng {
+        font-weight: bold;
+        color: blue;
+        font-size: 20px;
+      }
+      body > span {
+        text-decoration: underline;
+      }
+      body span {
+        text-decoration: overline;
+      }
+      a.btn {
+        text-decoration: none;
+        color: pink;
+        border: solid 1px black;
+        margin-top: 100px;
+        padding: 3px 15px;
+        border-radius: 5px;
+        background-color: black;
+        box-shadow: 2px 2px 3px #022d72;
+      }
+
+      body {
+        background-color: rgba(82, 12, 120, 0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <a class="btn" href="./index.html">홈으로</a>
+    <h2>선택자 알아보기</h2>
+    <table>
+      <colgroup>
+        <col width="150px" />
+        <col width="150px" />
+
+        <col />
+      </colgroup>
+      <thead>
+        <tr>
+          <th>구분</th>
+          <th>표현</th>
+          <th>설명</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>전체선택자</th>
+          <td>*</td>
+          <td>모든 태그에 적용</td>
+        </tr>
+        <tr>
+          <th>태그 선택자</th>
+          <td>태그명</td>
+          <td>해당 태그에 적용</td>
+        </tr>
+        <tr>
+          <th>클래스 선택자</th>
+          <td>.클래스명</td>
+          <td>
+            해당 <span id="dd" style="color: blue">class</span>가 지정된 태그에
+            적용:동일한 클래스를 여러 태그에 선언가능
+          </td>
+        </tr>
+
+        <tr>
+          <th>아이디 선택자</th>
+          <td>#아이디명</td>
+          <td>
+            해당 <span id="dd" style="color: blue">id</span>가 지정된 태그에
+            적용:유일해야한다.
+          </td>
+        </tr>
+        <tr>
+          <th>자식 선택자</th>
+          <td>선택자 > 자식선택자</td>
+          <td>선택자의 바로 아래 위치한 자식선택자에만 적용</td>
+        </tr>
+        <tr>
+          <th>자손 선택자</th>
+          <td>선택자 자손선택자</td>
+          <td>
+            선택자의 아래 위치한 모든 자손선택자에 적용<br />(자식도포함)공뱍
+          </td>
+        </tr>
+        <tr>
+          <th>속성 선택자</th>
+          <td>선택자[속성=값]</td>
+          <td>속성이 특정 값을 갖는 선택자에 적용</td>
+        </tr>
+
+        <!-- input[name=address] -->
+        <!-- input[type=passwowrd] -->
+      </tbody>
+    </table>
+
+    <br />
+    <span id="text">텍스트 크기 확인</span>
+    <p>
+      전체선택자를 통해 <span class="eng">html</span> 파일내의 모든 태그에 대해
+      동일한 스타일을 적용할수있다
+    </p>
+    <p>스타일적용의 우선순위* 태그명, 클래스,아이디</p>
+    <p>외부스타일,내부스타일,인라인스타일</p>
+  </body>
+</html>

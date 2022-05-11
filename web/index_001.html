@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      header {
+        background-color: rgb(58, 133, 231);
+        padding: 25px;
+        text-align: center;
+        color: white;
+        width: 100%;
+        font-size: 20px;
+        flex-shrink: 0;
+      }
+      body {
+        margin: 0%;
+        padding: 0;
+      }
+      nav {
+        list-style: none;
+        background-color: rgb(52, 65, 77);
+        color: white;
+        display: flex;
+        padding: 15px;
+      }
+
+      li:not(:last-child) {
+        margin-left: 100px;
+      }
+      li:nth-child(4) {
+        margin-left: 600px;
+      }
+      li {
+        flex-shrink: 0;
+      }
+
+      table {
+        width: 1500px;
+        border-collapse: collapse;
+        margin: 30px auto;
+        font-weight: bold;
+      }
+
+      tr th {
+        background-color: #eee;
+        border-bottom: 2px solid black;
+        padding: 10px;
+        border-left: none;
+      }
+
+      td {
+        border: 1px solid #eee;
+        padding: 13px;
+        border-right: none;
+        border-left: none;
+
+        text-align: center;
+      }
+      input {
+        color: white;
+        background-color: skyblue;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 20px;
+        margin-left: 1400px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>효선 고교 학사관리 2022V1</h1>
+    </header>
+    <nav>
+      <li>home</li>
+      <li>학생정보</li>
+      <li>성적일람표</li>
+      <li>로그인</li>
+    </nav>
+    <table>
+      <colgroup></colgroup>
+      <tr>
+        <th>학번</th>
+        <th>이름</th>
+        <th>전공</th>
+        <th>학년</th>
+        <th>주소</th>
+        <th>전화번호</th>
+      </tr>
+      <tr>
+        <td>2021001</td>
+        <td>홍길동</td>
+        <td>컴퓨터공학</td>
+        <td>2</td>
+        <td>서울시 동대문구</td>
+        <td>02-222-1234</td>
+      </tr>
+      <tr>
+        <td>2021001</td>
+        <td>춘향이</td>
+        <td>전자공학</td>
+        <td>3</td>
+        <td>전라북도 익산시</td>
+        <td>063-111-12324</td>
+      </tr>
+    </table>
+    <input type="submit" value="학생정보 추가" />
+  </body>
+</html>

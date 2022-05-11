@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: indianred;
+        margin: 30px;
+      }
+      div {
+        background-color: aliceblue;
+        display: inline-block;
+        padding: 10px;
+        margin: 20px;
+        line-height: 30px;
+      }
+      h3 {
+        margin: 0%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="java_class.html">뒤로가기</a>
+    </header>
+    <div>
+      <h2>boolean type 데이터란?</h2>
+      java 언어가 만들어질때 c 언어의 문법을 상당부분 적용하였다. <br />
+      c언어의 문법과 매우 유사한 이유가 그것이다 <br />
+      기본 데이터 type 인 int ,long ,double ,float, 는 c언어의 기본 타입과 거의
+      유사하다<br />
+      하지만 c 언어의 기억장치 사용상 제약을 상당부분 개선하여 만들어지면서
+      c언어에 없는 자료형 데이터 type 이 일부 생성되었는데 string type ,boolean
+      type 이 그것이다 <br />
+      java의 boolean type 은 어떤 대상의 같음,크고, 작음을비교 판단하여 참,
+      거짓의 연산 결과를 만들고 그결과를 true false 값으로 선언하여 코드내에서
+      다양하게 사용할수 있도록 만들어진 자료형이다 <br />
+      참고로, c언어에서는 정수0을 거짓으로 그외 정수는 참으로 표현하는
+      방법을사용하였다.
+    </div>
+    <div>
+      <strong>
+        int intNum = (int)(Math.random()*1000)+10;<br />
+        int intANS =33; <br />
+      </strong>
+
+      Logic Algebra(비교연산), boolean 연산 intNum 에 담긴 값이 제시된 값보다
+      크거나 작은것을 판단하는 연산<br />
+
+      <strong> System.out.println(intNum > intANS);</strong><br />
+
+      ==true false 검사하는 표식 로직연산 <br />
+      <strong>System.out.println((intNum%2)== 0); </strong>
+    </div>
+    <div>
+      <h3>boolean type 변수 선언</h3>
+      <br />
+
+      <strong> boolean bYes = intNum1 ==intNum2</strong>
+
+      <h3>boolean 연산</h3>
+      2개 이상의 값의 크기를 비교하는 연산 <br />
+      <strong> intNUm1 == intNUm2;</strong> //두 값이 같냐 <br />
+      <strong>intNUm1 >intNum2; //intNUm1</strong> 이 크냐 <br />
+      <strong>intNum1 < intNUm2; intNum2</strong> 가 크냐 <br />
+    </div>
+  </body>
+</html>

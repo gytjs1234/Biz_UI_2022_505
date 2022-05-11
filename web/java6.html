@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>나의 홈페이지</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      span {
+        color: red;
+      }
+      body{
+          background-color: antiquewhite;
+      }
+      div{
+          background-color: aliceblue;
+          line-height: 30px;
+          width: 700px;
+          padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="java_class.html">뒤로가기</a>
+
+    <h2>상속</h2>
+    <div>
+      <div>
+        <strong> public class StudentControllerV1 { <br />
+        public static void main(String[] args) {</strong><br />
+
+        기본생성자를 호출하여 인스턴스 생성<br />
+        StudentServiceV1 stv10 = new StudentServiceV1();</strong><br />
+
+        임의생성자를 호출하여 인스턴스 생성<br />
+      <strong>  StudentServiceV1 stv = new StudentServiceV1(3);</strong><br />
+        임의생성자는 출력하고싶은 개수만큼 지정해서 출력할수있다. <br>
+
+        <strong>   stv.inputStudent();</strong><br />
+            <strong>   stv.printStudent();</strong><br />
+
+            <strong> 
+                 }</strong> <br />
+
+            <strong>   } </strong><br />
+      </div>
+      <h3>serviceV1</h3>
+      <strong
+        >protected String[] strStdent ; <br />
+        protected Scanner scan; </strong
+      ><br />
+      상속해줄 준비 클래스 변수의 접근제한자를 protected로 변경
+
+      <strong> public StudentServiceV1() {}</strong>
+      기본생성자는 클래스를 선언하면 자동으로 선언되는 생성자 메서드 임의
+      생성자:클래스 개발자가 필요에 의해 임의로 선언하는 생성자 메서드
+      <strong> public StudentServiceV1(int length) {}</strong>
+
+      <h3>serviceV2</h3>
+      <strong>
+        public class StudentServiceV2 <span> extends</span> StudentServiceV1
+        {}</strong>
+      
+      servicev2에서 serviceV1 을 상속 받았 다. <br />
+      상속을 받으면 Servicev1에 선언된 변수,method를 그대로 물려받는다.(단
+      생성자 제외) <br />
+      상속 키워드는 extends(확장)이다. <br />
+      Override(재 정의)란?:ServiceV1에 선언된 메서드 중에서
+	 inputStudent 메서드를 다시 정의 하고 이걸 사용하겠다. <br>
+    </div>
+  </body>
+</html>

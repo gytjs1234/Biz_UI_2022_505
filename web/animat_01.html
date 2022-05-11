@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+.box{width: 100px;height: 100px; position: relative;margin: 100px}
+#box1 {background-color: red; animation-name:box1;animation-duration:4s;animation-delay:1s;}
+@keyframes box1{
+0%{background-color:red;left:0;top:0;}
+25%{background-color:blue;left:200px;top:0;}
+50%{background-color:black;left:200px;top:0;}
+75%{background-color:green;left:200px;top:200px;}
+100%{background-color:yellow;left:0pc;top:200px;}
+}
+#box2{
+background-color:pink;
+}
+@keyframes box2{
+from{left:0px;} to{left:200px;}
+}
+#box2{ background-color:pink;
+ animation-name:box2;
+animation-duration:4s;
+animation-delay:1s;}
+
+#box3{background-color: orange;
+animation-name:box2;
+animation-duration:2s;
+animation-delay:1s;
+animation-direction:alternate;
+animation-iteration-count:2;
+animation-timing-function: linear;
+}
+
+#box4{
+background-color: purple;
+animation-name:box2;
+animation-duration:2s;
+animation-delay:1s;
+animation-timing-function:linear;
+animation-iteration-count:1s; 
+animation-direction:alternate;
+}
+
+#box{
+margin: 100px;
+animation-name:image;
+animation-duration:3s;
+animation-delay:1s;
+animation-timing-function:linear;
+animation-iteration-count:2; 
+animation-direction:alternate;
+}
+
+@keyframes image{
+from {left:0px} to  {left:300px}
+}
+@keyframes image2{
+0%{left:0px}
+33%{left:100px}
+66%{left:200px}
+100%{left:300px}
+}
+/* .slide{animation: image2  3s  1s  infinite  alternate;} */
+</style>
+</head>
+<body>
+<a href='index.html'>홈으로</a>
+<div id='box1' class='box'></div>
+<div id='box2' class='box'></div>
+<div id='box3' class='box'></div>
+<div id='box4' class='box'></div>
+
+<div id='box' class='box'><img src='이미지1.webp'></div>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>233-235실습</title>
+<style>
+div#first {
+	border: 1px solid black;
+	padding: 0 5px;
+	background-color: white;
+	width: 600px
+}
+
+ul li {
+	line-height: 2;
+} /* 폰트의 기본크기는 16px 이므로 2배라고 할때 32px로 지정해도 됨*/
+.color {
+	color: red
+}
+
+table {
+	border-collapse: collapse;
+	border: 1px solid black;
+	caption-side: bottom
+}
+
+th, td {
+	border: 1px solid #222;
+	padding: 10px 20px
+}
+
+.heading {
+	background-color: #eee
+}
+
+.btn {
+	text-decoration: none;
+	color: pink;
+	border: solid 1px black;
+	margin-top: 50px;
+	padding: 3px 15px;
+	border-radius: 5px;
+	background-color: black;
+	box-shadow: 2px 2px 3px #022d72;
+	display: inline-block;
+	width: 50px;
+}
+
+li span {
+	color: #ad3000;
+	font-weight: bold;
+	font-size: 18px
+}
+
+div.second {
+	width: 200px;
+	height: 70px;
+	background-color: black
+}
+
+div.second h2 {
+	line-height: 70px;
+	text-align: center
+}
+
+body {
+	background-color: rgba(82, 12, 120, 0.2)
+}
+
+td {
+	background-color: white
+}
+</style>
+
+
+</head>
+<body>
+
+	<a class='btn' href='index.html'>홈으로</a>
+	<h1>예제1</h1>
+	<div id='first'>
+		<h2>최신 웹 디자인 트렌드</h2>
+		<br>
+		<ul style='list-style-type: none'>
+			<li><span class='color'>반응현 웹 디자인</span>-다양한 화면 크기에 최적화하다</li>
+			<li><span class='color'>플랫 디자인</span> - 입체에서 평면으로</li>
+			<li><span class='color'>풀 스크린 배경</span> - 콘텐츠에 집중</li>
+			<li><span class='color'>원 페이지 사이트</span> - 한 페이지에 모든 내용을 담다</li>
+			<li><span class='color'>패럴랙스 스크롤링</span> - 동적인 효과로 강한 인상을!</li>
+			<li><span class='color'>웹 폰트</span> - 웹 타이포그래피를 받쳐 주는 기술</li>
+		</ul>
+	</div>
+	<h1>예제2</h1>
+	<div class='second'>
+		<h2 style='color: white;'>웹 개발 기초</h2>
+	</div>
+
+	<br>
+	<h1>예제3</h1>
+	<table>
+
+		<tr class='heading'>
+			<th>구분</th>
+			<th>성인</th>
+			<th>독서자</th>
+		</tr>
+
+		<tr>
+			<th class='heading'>종이책</th>
+			<td>6.1권</td>
+			<td>11.8권</td>
+
+		</tr>
+		<tr>
+			<th class='heading'>전자책</th>
+			<td>1.2권</td>
+			<td>7.1권</td>
+		</tr>
+		<tr>
+			<th class='heading'>오디오북</th>
+			<td>0.2권</td>
+			<td>5.5권</td>
+		</tr>
+		<caption>2019 국민 독서실태</caption>
+
+	</table>
+
+
+
+
+
+
+
+</body>
+</html>

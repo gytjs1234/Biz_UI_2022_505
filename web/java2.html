@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: rgb(133, 116, 201);
+        display: flex;
+        flex-wrap: wrap;
+      }
+      div {
+        width: 500px;
+        background-color: white;
+        padding: 20px;
+        margin: 30px auto;
+      }
+      ul {
+        border: 1px solid black;
+        width: 200px;
+        text-align: left;
+        padding-left: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h3>메서드란</h3>
+      단어() 형태의 단어를 method 라고 한다. <br />
+      * function, 함수라고 한다<br />
+      * method 는 함수 에 포함되는 개념이다.<br />
+      * method 는 단독으로 사용하지 않고 다른 키워드와 조합으로 사용되는 경우가
+      많다.
+    </div>
+    <div>
+      <h4>main method(메소드)</h4>
+      표기: main() <br />
+      main() 는 static void main 키워드와 한 그룹으로 사용되면 마치 키워드 처럼
+      작동된다<br />
+      pulic static void main(){} :Java 시작점 ,진입점 method 명령 그룹이라고
+      한다. <br />
+
+      초기에 Java project 를 시작할때는 반듯이 main(){}블럭에서 부터 코드가
+      시작되어야 한다.
+      <strong> public static void main(String[] args) {}</strong>
+      <h4>println() 메서드</h4>
+      System.out.println();<br />
+      "/n" 줄바꿈 "/t" tap<br />
+      print는 줄바꿈기능이 없음<br />
+      println 은 포함되어있음
+    </div>
+    <div>
+      <h4>명령문의 조합</h4>
+      명령문은 키워드1 키워드2 키워드2 처럼 빈칸으로 키워드를 구분 하거나 <br />
+      키워드1.키워드2.키워드3 처럼(.)키워드를 구분하여 하나의 명령문을
+      구현(명령문을 문법에 맞게 완성)한다<br />
+
+      빈칸으로 조합된 키워드는 사용 용도에 따라 많은 경우의 수가 있다. <br />
+      <ul>
+        <strong>
+          public static void main()<br />
+          public void main()<br />
+          public int main()<br
+        /></strong>
+      </ul>
+
+      Dot(.)로 조합된 키워드는 사용하는 경우의 수가 제한적이다.
+      <ul>
+        <strong
+          >system.out.println()<br />
+          printWriter.println()<br />
+          printWriter.out.println()<br
+        /></strong>
+      </ul>
+    </div>
+    <div>
+      <strong> int num1 =1;</strong><br />
+      아래 명령문이 실행되면 앞에서 num1에 저장된 1이 일단 출력되고
+      println()명령이 실행이 끝나면 비로소 num1++가 실행된다
+      System.out.println(num1++); 1 이 출력된다 System.out.println(num1++); 2 이
+      출력된다 System.out.println(num1++); 3 이 출력된다<br />
+      <br />
+      <strong> num1 = 0;</strong> <br />
+
+      System.out.println(num1); 0이 출력된다 <br />
+
+      <strong> num1 +=1;</strong> <br />
+      System.out.println(num1); 1이 출력된다
+    </div>
+    <div>
+      변수++ 또는 ++변수 는 단독으로 사용될때는 연산결과가 똑같다. <br />
+      <strong> num1++; ++num1;</strong> <br />
+      하지만 다른명령문안에서 사용될떄는 성질이 매우 달라서 많이 주의를 해야한다
+      <br />
+      ++변수: 가장먼저 실행되는 명령이 된다. <br />
+      변수++: 모든 명령이 다 실행되고 다음줄 명령문으로 진행하기 직전에
+      실행된다.
+    </div>
+    <div>
+      <strong> intNum2 =add();</strong> <br />
+      }end main() 메서드 <br />
+      메인밖에
+      <h4>add()메소드 를 선언하기</h4>
+      자바에 없는 명령어를 만들었음 <br />
+
+      <strong>
+        public static int add( ) {<br />
+
+        return 55 + 33;}
+      </strong>
+      <br />
+      *정수 55와 33을 덧셈하여 return 하기 * <br />
+
+      <h4>num1() 메서드 선언하기</h4>
+      add() : add method 라고 읽는다 <br />
+      add()를 실해 하여 그결과를 intNum2에 저장해 달라 <br />
+      <strong> public static int num1 () {</strong>
+      num1 메소드를 선언했다. <br />
+      return 100; <br />
+      명령 +문장 <br />
+      1. 숫자직접입력 <br />
+      2.다른변수의 값을 읽어서 입력<br />
+      3. 어떤 명령을 수행해서 그 결과를 담는 방법 <br />
+
+      <strong> }</strong>num1 메소드 끝
+    </div>
+  </body>
+</html>

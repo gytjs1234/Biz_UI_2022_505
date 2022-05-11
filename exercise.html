@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      header {
+        height: 100px;
+        background-color: rgb(64, 58, 181);
+        line-height: 100px;
+        text-align: center;
+        color: white;
+        flex-shrink: 0;
+      }
+      ul {
+        list-style: none;
+        display: flex;
+      }
+      li {
+        margin-right: 100px;
+        color: aliceblue;
+        flex-shrink: 0;
+      }
+      nav {
+        background-color: rgb(72, 68, 64);
+        margin: 0%;
+        padding: 2px;
+      }
+      nav ul > li:nth-of-type(4) {
+        margin-left: 500px;
+      }
+      table {
+        border: 1px solid black;
+
+        width: 600px;
+        border-collapse: collapse;
+        margin: 20px;
+        text-align: center;
+      }
+      td,
+      th {
+        border: 1px solid;
+        padding: 10px;
+      }
+      th {
+        background-color: rgb(176, 203, 227);
+      }
+      div {
+        width: 600px;
+        margin: 0px auto;
+        padding: 20px;
+      }
+      button {
+        float: right;
+        background-color: blue;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>대학 고교 성적처리 2021 v1</h2>
+    </header>
+    <nav>
+      <ul>
+        <li>HOME</li>
+        <li>학생정보</li>
+        <li>성적일람표</li>
+        <li>로그인</li>
+      </ul>
+    </nav>
+    <div>
+      <table>
+        <tr>
+          <th>학번</th>
+          <td>20210001</td>
+          <th>전공</th>
+          <td>컴퓨터공학</td>
+        </tr>
+        <tr>
+          <th>이름</th>
+          <td>홍길동</td>
+          <th>학년</th>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>주소</td>
+          <td
+            colspan="3
+"
+          >
+            서울특별시
+          </td>
+        </tr>
+      </table>
+      <button>학생정보수정</button>
+    </div>
+  </body>
+</html>

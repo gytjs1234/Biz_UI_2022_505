@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./rest.css" />
+    <style>
+      section {
+        padding: 10px;
+        border: 1px solid rgb(138, 50, 65);
+        /*
+        flex box 탄생 철학
+        복잡한 계산 없이 박스의 크기와 순서를 유연하게 배치하자
+        */
+
+        /*flex container*/
+        display: flex;
+      }
+      /*flex item
+      flex container 에 포함된 flex item들은
+      기본 display 속성이 inline-block이 된다
+      width 값을 지정하여 폭을 유연하게 조절할수 있다
+      
+      flex item 지정하는 대표 속성: 팽창과 수축
+      flex-grow:팽창
+      flex-shrink:수축
+      flex-basis:기준속성
+      디바이스 크기만큼 같이 맞춰서 알맞게 변함
+      */
+      article {
+        border: 1px solid rgb(206, 161, 161);
+      }
+      article:nth-of-type(1) {
+        /*
+          glow속성은 item들의 width합이 container의 width보다 작을떄
+          grow 0보다 큰값으로 지정이 되면 Container의 남은 여백부분을
+          width 값으로 채워버린다
+          container의 width가 커지면 자연히 따라서 같이 커진다.
+          grow값을 각 칼럼별로 다르게 설정하면 설정한 비율만큼 width 값이 설정된다.
+          grow를 설정하지 않은 item은 grow 0 으로 세팅된다
+          */
+        flex-grow: 1;
+        flex-shrink: 1;
+        /*수축 속성이라고 한다. 이속성은 기본값이 1로 셋팅된면 0또는 1의 값을 설정한다 1이면 content가 item의 width보다 작으면
+            text 일경우 wrap현상이 발생한다
+            0이면 content의 width를 유지하는 형태로 최소화 되지않는다
+        */
+        flex-basis: auto;
+      }
+      article:nth-of-type(2) {
+        flex-grow: 2;
+        flex-shrink: 0;
+        flex-basis: auto;
+      }
+      article:nth-of-type(3) {
+        flex-grow: 1;
+        flex-shrink: 1;
+        /*glow나shrink 가 적용될때 기준크기
+        basis 는 기본값이 auto이고 일정값으로 지정을하면
+        초기에 지정값으로 설정이 되고 
+        팽창,수축을 설정했을 때 basis에 설정한 값으로 유지하는 성질이 있다.
+        */
+        flex-basis: 150px;
+      }
+      article:nth-of-type(4) {
+        /*그로우:0 슈링크:0 베이스:auto*/
+        /*grow shrink basis 한꺼번에 단축형으로 지정*/
+        flex: 1 0 auto;
+        /*grow:1 shrink:0 지정하고 basis 는 auto로*/
+        /*grow:1shrink:1 basis:auto flex단축형으로 정수를 지정하면 
+        item들을 비율에 따라 배치하고 Contanier에 가득 채운 layout이 만들어진다*/
+        flex: 1;
+        flex: 1 0;
+        /*grow:1 basis:100px shrink1*/
+        flex: 1 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <article><h2>첫번째 아티클</h2></article>
+      <article><h2>두번째 아티클</h2></article>
+      <article><h2>세번째 아티클</h2></article>
+      <article><h2>네번째 아티클</h2></article>
+    </section>
+  </body>
+</html>

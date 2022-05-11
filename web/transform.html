@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>변형</title>
+<style>
+.box {
+	width: 100px;
+	height: 100px;
+	margin: 50px
+}
+
+.box1 {
+	background-color: red
+}
+
+.box2 {
+	background-color: pink
+}
+
+.box1:hover {
+	transform: rotate(30deg);
+	transform-origin: right top;
+} /*회전의 기준 지정*/
+
+/*시계방향으로30도*/
+.box2:active {
+	transform: translate(300px, 0px); /*x축 ,y축 이동거리 지정*/
+}
+
+.box3{
+	width: 100px;
+	height: 100px;
+	background-color: green;
+	position: fixed;
+	left: 0;
+	top: 0;
+	top: 50%;
+	left: 50%;
+	 transform: translate(-50%, -50%); /*화면의 가운데로 이동*/
+}
+
+#outer {
+	width: 100%;
+	height: 600px;
+	border: 1px solid;
+	position: relative;
+	margin: 50px;
+}
+
+
+body {
+	margin: 0
+}
+
+#inner {
+	width: 100px;
+	height: 100px;
+	background-color: orange;
+	position: absolute;
+	top:50%;left:50%;
+	transform:translate(-50%,-50%)
+}
+</style>
+
+
+
+</head>
+<a href='index.html'>홈으로</a>
+<body>
+	<p>변형(transform) 텍스트나 이미지 등을 움직이게 하기 위해 transform을 적용한다</p>
+	<div class='box box1'></div>
+	<div class='box box2'></div>
+	<div class='box3'></div>
+	<div id='inner'></div>
+	<div id='outer'></div>
+
+
+</body>
+</html>

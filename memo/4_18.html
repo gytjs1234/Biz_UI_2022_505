@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>나의 홈페이지</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: antiquewhite;
+      }
+      div {
+        background-color: white;
+        width: 700px;
+        margin: 30px auto;
+        padding: 30px;
+        line-height: 30px;
+      }
+      ul {
+        list-style-type: decimal;
+      }
+      img {
+        width: 100%;
+        margin: 20px 0;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      a:hover {
+        color: blueviolet;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h2>java의 역사</h2>
+      <br />
+      <ul>
+        <li>
+          1.1991년 썬 마이크로 시스템에서 고안된 오크에서 시작되었다. 제임스
+          고슬링에 의해 구체화 되었다.
+        </li>
+
+        <li>
+          처음에는 손안의 리모콘에 탑재될 소프트웨어를 만드는 것이 목표였다.
+        </li>
+        <li>인터넷의 등장과 함꼐 1996년1월 정식으로 발표된다.</li>
+        <li>
+          초기 자바는 웹 브라우저에서 작동되는 작은 어플리케이션으로
+          애플릿이라고 불렀다 웹페이지에서 사운드 애니메이션 등 멀티미디어를
+          제공할 수 있는 유일한 방법이였다.
+        </li>
+        <li>
+          보안상 이유로 웹브라우저에서 애플릿을 작동할수 없게 되면서 web Server
+          프로그래밍을 통해 동적 Web Application을 작동시키는 서블릿 ,JSP로
+          방향이 전환 되었다.
+        </li>
+        <li>
+          Web Application Server 프로그래밍 개발툴로 1위의 자리를 지키고
+          있으며,안드로이드 스마트 폰에서 작동되는 어플을 개발하는 언어로
+          사용되고 있다.
+        </li>
+      </ul>
+    </div>
+    <div>
+      인터넷:인터넷은 여러개의 네트워크의 연결을 의미 <br />
+      &nbsp;&nbsp;&nbsp; 인터넷은 중앙의 호스트 컴퓨터도 없고, 이를 관리하는
+      단체 및 조직도 없습니다. ]서로의 통신망이 연결된 서비스가 인터넷이라
+      생각하면됨.
+      <br />
+      인트라넷: 내부의 네트워크 <br />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 회사나 특정 단체들만 사용하는 네트워크라고
+      생각하면 된다. 회사의 업무 보고 , 휴가 신청 , 연락처 , 메신저 , 등등
+      회사나 단체내에서만 정보공유를 한다
+      <br />
+      마이그레이션:정보기술에서 마이그레이션이란 한 운영환경으로부터,좀더 낫다고
+      여겨지는 다른 운영환경으로 옮겨가는 과정
+      <br />
+      ex)데이터를 한 종류의 데이터베이스에서 다른 종류의 데이터베이스로 이동,
+      하나의 데이터 스토리지 시스템을 다른 데이터 스토리지 시스템으로
+      교체,모놀리식 애플리케이션을 컨테이너화된 서비스로 교체 <br />
+      servlet:자바로 만든 서버 어플리케이션 <br />
+      listener:서버가 다리고있다가 요청에 응답해줌 <br />
+      mvc패턴:
+    </div>
+    <div>
+      <h2>JSP란?</h2>
+      jsp에서 코딩을하지않고 보여만준다.
+    </div>
+    <div>
+      <h2>스프링 프레임워크란</h2>
+      Spring Framework 는 Java 플랫폼 용 애플리케이션 프레임워크 이자 제어
+      컨테이너 의 역전입니다 . 프레임워크의 핵심 기능은 모든 Java
+      애플리케이션에서 사용할 수 있지만 Java EE (Enterprise Edition) 플랫폼 위에
+      웹 애플리케이션을 구축하기 위한 확장이 있습니다. 프레임워크는 특정
+      프로그래밍 모델 을 강요하지 않지만 EJB( Enterprise JavaBeans ) 모델 에
+      추가되어 Java 커뮤니티에서 인기를 얻었습니다 . Spring Framework는 오픈
+      소스 입니다.
+      <p>하나의 도구이다. 현재 가장 많이 사용되고 쉽다.</p>
+      메이븐프로젝트는jdk 가져오기쉽다. xml :데이터를주고받을때,정해지는
+      문법이없음 xmlns: "http://maven.apache.org/POM/4.0.0"참고해서 자동완성을
+      쓰겠다. <br />
+      plugins: jsp:자바서버페이지(컴파일후 실행한후 웹브라우저에 보여줌)
+    </div>
+    <div>
+      <h2>스프링 시작하기</h2>
+      <ul>
+        <li><a href="https://spring.io/tools">스프링다운</a></li>
+        <img src="s.png" />
+        <li><img src="ma5.png" />maven 프로젝트생성</li>
+        <li><img src="ma2.png" />id만들기</li>
+        <li><img src="HELLO.png" />프로젝트생성완료</li>
+        <li>
+          <img src="pre.png" />프로젝트 오른쪽누르고propertiesdp에서
+          라이브러리추가
+        </li>
+        <li>
+          <img src="mav7.png" /><a
+            href="https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin/3.8.1"
+            >comiler plugin 바로가기</a
+          >
+        </li>
+        <li>
+          <img src="mav8.png" /><a
+            href="https://mvnrepository.com/artifact/org.springframework/spring-webmvc/5.2.21.RELEASE"
+            >web MVC바로가기</a
+          >
+        </li>
+        <li>
+          <img src="servelt.png" /><a
+            href="https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api/4.0.1"
+            >servlet바로가기</a
+          >
+        </li>
+        <li>
+          <img src="API.png" /><a
+            href="https://mvnrepository.com/artifact/javax.servlet.jsp/javax.servlet.jsp-api/2.3.3"
+            >server Pages바로가기</a
+          >
+        </li>
+        <li>
+          <img src="jstl.png" alt="" /><a
+            href="https://mvnrepository.com/artifact/javax.servlet/jstl/1.2"
+            >JSTL 바로가기</a
+          >
+        </li>
+        <li>
+          복사해서 pom.xml에 붙이기:필요한 자바에서 제공하지않는 도구들을
+          가져올떄 필요한 파일
+        </li>
+        <li>
+          <img src="git.png" />쌤깃허브에서 build자료 가져와서 pom.xml에 붙이기
+        </li>
+        <li>client 가 서버에 요청하면 톰켓이 응답을 해준다.</li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+  </body>
+</html>

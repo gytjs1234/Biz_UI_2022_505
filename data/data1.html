@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: darksalmon;
+      }
+      div {
+        background-color: white;
+        width: 700px;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 2px 2px 2px black;
+        margin: 20px;
+        line-height: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>데이터베이스시작</h2>
+    <div></div>
+    <div>
+      <ul>
+        <li>오라클(소프트웨어):DBMS</li>
+        <li>
+          SQL(구조화된 질의어 ):하나의 언어이고 권한이 있는 사용자만 명령을
+          내릴수있다.
+        </li>
+        <li>
+          스키마:데이터관리하는 구조이다. 스키마의 종류로는 3가지가있다<br />
+          외부스키마:일반 사용자는 질의어(SQL)를 사용하여 데이터베이스를 사용
+          <br />개념스키마: 단순히 스키마(Schema)라고 한다면 개념 스키마를
+          의미한다. <br />내부 스키마: 물리적인 저장장치와 밀접한 계층
+        </li>
+        <li>DBA:데이터베이스의 최고관리자로써 최고의 권한을 갖는다</li>
+        <li>DB user: 권한이 조금낮고 권한을 부여받아 실행한다</li>
+      </ul>
+    </div>
+    <div>
+      <ul>
+        <li>
+          <h3>관리자로 접속하여 할일</h3>
+
+          1.TableSpace생성<br />
+          2.User Acc생성 및 TableSpace연결<br />
+          3.User에게 권한 부여<br />
+        </li>
+        <br />
+        <li>
+          관리자로 접속하여 '생성'을 할때는 CREATE라는 키워드를 사용한다. <br />
+        </li>
+        <li>'삭제'를 할떄는 DROP이라는 키워드를 사용한다</li>
+        <li>
+          <h3>TableSpace생성</h3>
+          오라클은 물리적 저장공간을 TableSpace라는 이름으로 관리한다. <br />
+          오라클 DBMS를 사용하여 데이터를 관리하기 위해서는 제일먼저
+          TableSpace를 생성해야한다. <br />
+          오라클 DBMS를 설치하면 System이 관리하는 TableSpace가 기본으로
+          생성된다. System TableSpace에는 중요한 데이터들이 저장되므로 가급적
+          일반적인 대량의 Data를 저장하지않는것이좋다 때문에 프로젝트별로
+          TableSpace를 만드는것이 좋다.
+        </li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+    <div>
+      <h3>DBMS에서 사용하는 SQL(Structed Query Lang)명령들</h3>
+      <h4>DDL</h4>
+      * 객체를 생성하는 명령들* <br />
+      <span>
+        CREATE TABLESPACE <br />
+        CREATE USER<br />
+        CREATE TABLE</span
+      >
+    </div>
+  </body>
+</html>

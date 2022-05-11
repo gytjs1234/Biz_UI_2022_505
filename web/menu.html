@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+.btn {
+	text-decoration: none;
+	color: pink;
+	border: solid 1px black;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding: 3px 15px;
+	border-radius: 5px;
+	background-color: black;
+	box-shadow: 2px 2px 3px #022d72;
+	display: inline-block;
+	padding: 3px 15px;
+	border-radius: 5px;
+	background-color: black;
+	box-shadow: 2px 2px 3px #022d72;
+	display: inline-block;
+	width: 50px;
+}
+
+#first ul {
+	list-style: none;
+}
+
+/*ul li  의 display를 inline 이나 inline-block 으로 지정하면 list style지정되지 않는다. */
+#first ul li {
+	width: 100px;
+	border: 1px solid #ccc;
+	text-align: center;
+	padding: 10px 0;
+	display: inline-block;
+	margin: 0 10px;
+}
+
+#second div {
+	border: 1px solid #ccc;
+	float: left; /* float 를 지정하면 실제 컨텐츠만큼의 너비를 차지한다.*/
+	padding: 5px 20px;
+	margin-right: 25px;
+}
+#first {clear:left; margin: 30px 0}  
+#first ul {padding: 0}
+/* #first ul li:first-child {visibility: hidden */
+/* } */
+</style>
+</head>
+
+<a class='btn' href="index.html">홈으로</a>
+<body>
+	<div id='first'>
+		<ul>
+			<li>메뉴1</li>
+			<li>메뉴2</li>
+			<li>메뉴3</li>
+			<li>메뉴4</li>
+		</ul>
+	</div>
+
+
+
+	<div id='second'>
+		<div>메뉴1</div>
+		<div>메뉴2</div>
+		<div>메뉴3</div>
+		<div>메뉴4</div>
+	</div>
+
+
+
+</body>
+
+
+</html>

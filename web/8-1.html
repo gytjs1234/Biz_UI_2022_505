@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>공지 행사</title>
+    <style>
+      .btn {
+        text-decoration: none;
+        color: pink;
+        border: solid 1px black;
+        margin-top: 100px;
+        padding: 3px 15px;
+        border-radius: 5px;
+        background-color: black;
+        box-shadow: 2px 2px 3px #022d72;
+      }
+      table {
+        width: 1000px;
+        border-collapse: collapse;
+      }
+
+      tr th {
+        height: 50px;
+        background-color: #eee;
+        border-bottom: 2px solid black;
+        padding: 10px;
+      }
+
+      td {
+        border: 1px solid #eee;
+        padding: 13px;
+        border-right: none;
+        text-indent: 0;
+      }
+
+      div {
+        width: 1000px;
+        margin: 30px auto;
+      }
+
+      focus {
+        background-color: yellow;
+      }
+
+      h2 {
+        text-align: center;
+        font-size: 30px;
+      }
+
+      h4 {
+        text-align: center;
+      }
+
+      hover {
+        background-color: yellow;
+      }
+
+      body > div:nth-of-type(1) li {
+        list-style: none;
+        width: 500px;
+        box-sizing: border-box;
+        display: inline-block;
+        border: 1px solid #eee;
+        padding: 20px;
+        text-align: center;
+        font-weight: bold;
+      }
+      body > div:nth-of-type(1) ul {
+        padding: 0px;
+      }
+      a:hover {
+        color: pink;
+      }
+      body > div:nth-of-type(1) .on {
+        border: 1px solid black;
+        border-bottom: none;
+      }
+      select {
+        width: 100px;
+        height: 28px;
+      }
+      input {
+        width: 50px;
+        height: 27px;
+      }
+      div#search ul {
+        float: right;
+        list-style: none;
+      }
+      div#search ul li {
+        float: left;
+      }
+      div#search ul li {
+        margin-left: 10px;
+      }
+      div ul li:active {
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <a class="btn" href="index.html">홈으로</a>
+    <h2>공지/행사안내</h2>
+    <h4>HRD_Net 공지 및 행사 내용을 알려 드립니다.</h4>
+    <div>
+      <ul>
+        <li class="on">공지사항</li>
+        <li>행사안내</li>
+      </ul>
+    </div>
+    <br />
+
+    <div style="height: 50px" id="search">
+      <ul>
+        <li>
+          <select name="first">
+            <option value="C0l">등록일</option>
+            <option value="C04">작성자</option>
+            <option value="C05">제목</option>
+            <option value="C05">조회수</option>
+          </select>
+        </li>
+        <li>
+          <select name="second">
+            <option value="l">10개씩</option>
+            <option value="3">20개씩</option>
+            <option value="4">30개씩</option>
+            <option value="5">40개씩</option>
+          </select>
+        </li>
+
+        <li><input type="submit" value="보기" /></li>
+      </ul>
+    </div>
+    <div>
+      <table style="clear: right">
+        <colgroup>
+          <col width="100px" />
+          <col width="500px" />
+          <col width="100px" />
+          <col width="100px" />
+          <col width="100px" />
+          <col width="100px" />
+        </colgroup>
+        <thead>
+          <tr>
+            <th>번호</th>
+            <th>제목</th>
+            <th>작성자</th>
+            <th>등록일</th>
+            <th>첨부</th>
+            <th>조회수</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1694</td>
+            <td>
+              <a
+                >[공지] 수강신청 장애 및 HRD-Net 접속지연으로 인한 출석직권처리
+                협조 요청(처리완료)</a
+              >
+            </td>
+            <td>홍원기</td>
+            <td>2022-03-28</td>
+            <td></td>
+            <td>1,653</td>
+          </tr>
+          <tr>
+            <td>1686</td>
+            <td>
+              <a
+                >[공지] HRD-Net 업데이트로 인한 서비스 일시 중지 안내 - 2.25
+                (금) 12:20 ~ 12:50</a
+              >
+            </td>
+            <td>이태성</td>
+            <td>2022-02-25</td>
+            <td></td>
+            <td>2,938</td>
+          </tr>
+          <tr>
+            <td>1693</td>
+            <td>
+              <a>[안내] 내일배움카드 진단상담 오류 관련 안내(조치완료)</a>
+            </td>
+            <td>홍원기</td>
+            <td>2022-03-22</td>
+            <td></td>
+            <td>3,662</td>
+          </tr>
+          <tr>
+            <td>1692</td>
+            <td><a>온라인청년센터 청년 서포터즈 2기 모집 안내</a></td>
+            <td>홍원기</td>
+            <td>2022-03-17</td>
+            <td></td>
+            <td>3,321</td>
+          </tr>
+          <tr>
+            <td>1691</td>
+            <td><a>안내] 2022년 민간고용서비스 종사자 (무료) 보수교육</a></td>
+            <td>예부해</td>
+            <td>2022-03-10</td>
+            <td></td>
+            <td>6,608</td>
+          </tr>
+          <tr>
+            <td>1690</td>
+            <td>
+              <a>[안내] 2022년 상반기 K-디지털 트레이닝 1차 선정결과 공고</a>
+            </td>
+            <td>배현우</td>
+            <td>2022-02-28</td>
+            <td></td>
+            <td>5,322</td>
+          </tr>
+          <tr>
+            <td>1689</td>
+            <td>
+              <a>[안내] 2022년 상반기 K-디지털 트레이닝 1차 선정결과 공고</a>
+            </td>
+            <td>배현우</td>
+            <td>2022-02-28</td>
+            <td></td>
+            <td>5,322</td>
+          </tr>
+          <tr>
+            <td>1688</td>
+            <td>
+              <a
+                >[안내] 국민내일배움카드 운영규정 개정(22.2.24.)에 따른 카드발급
+                신청절차 간소화 안내</a
+              >
+            </td>
+            <td>이태성</td>
+            <td>2022-02-28</td>
+            <td></td>
+            <td>14,686</td>
+          </tr>
+          <tr>
+            <td>1687</td>
+            <td><a>[안내] HRD-Net 어플 업데이트 안내</a></td>
+            <td>이태성</td>
+            <td>2022-02-28</td>
+            <td></td>
+            <td>14,686</td>
+          </tr>
+          <tr>
+            <td>1685</td>
+            <td>
+              <a
+                >[알림] 2020년 1차「4차 산업혁명 선도훈련기관」성과평가 결과 및
+                이의신청 안내</a
+              >
+            </td>
+            <td>홍원기</td>
+            <td>2022-02-24</td>
+            <td></td>
+            <td>1,230</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

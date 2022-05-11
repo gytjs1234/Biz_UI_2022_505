@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원가입</title>
+
+<style>
+table {
+	border-collapse: collapse;
+	width: 420px;
+}
+
+th, td {
+	border: 2px solid #222;
+	padding: 6px;
+}
+input[name=name]{width:200px }
+
+a.btn{text-decoration: none; color:pink; border: solid 1px black ; margin-top:100px; padding:3px 15px;
+border-radius:5px; background-color:black; box-shadow: 2px 2px 3px #022d72;}
+</style>
+
+
+</head>
+<body>
+<a  class='btn' href='index.html'>홈으로</a>
+<input type='button' value='닫기' onclick='window.close()'>
+<form action = '../index.html'>
+
+
+	<table>
+	
+	<colgroup>
+	<col width='150px'>
+	<col width='300px'>
+		<caption>회원가입정보</caption>
+		<tr>
+			<th>아이디</th>
+			<td><input type='text' name='id' required placeholder='아이디'
+				placeholder='아이디' autofocus></td>
+		</tr>
+		<tr>
+			<th>비밀번호</th>
+			<td><input type='password' name='password' required
+				placeholder='비밀번호' placeholder='비밀번호'></td>
+		</tr>
+		<tr>
+			<th>비밀번호확인</th>
+			<td><input type='password' name='password' required
+				placeholder='비밀번호확인' placeholder='비밀번호확인'></td>
+		</tr>
+		<tr>
+			<th>이름</th>
+			<td><input type='text' name='name' required placeholder='이름'
+				placeholder='이름'></td>
+		</tr>
+		<tr>
+			<th>성별</th>
+			<td><input type='radio' name='gender' value='남' id='4male'
+				checked><label for='4male'>남</label> <input type='radio'
+				name='gender' value='여' id='1female'><label for='1female'>여</label></td>
+		</tr>
+		<tr>
+			<th>전화번호</th>
+			<td><select name='companion'>
+					<option value='C0l'>061</option>
+					<option value='C04'>062</option>
+					<option value='C05'>031</option>
+					<option value='C05'>012</option>
+					<option value='C05'>041</option>
+			</select></td>
+
+		</tr>
+		<tr>
+			<th>SMS수신여부</th>
+			<td><label><input type='checkbox' name='sms'>수신함</label></td>
+		</tr>
+		<tr>
+			<th>이메일</th>
+			<td><input type='text' name='email'>@ <select
+				name='service'>
+					<option value='naver.com'>네이버</option>
+					<option value='daum.net'>다음</option>
+					<option value='google.com'>구글</option>
+					<option value='nate.com'>네이트</option>
+					<option selected>직접입력</option>
+			</select> - <input type='text' name='name' style= 'width:60px' > - <input type='text'
+				name='name' style='width:60px'>
+			</td>
+<!-- 				email=abc&sevice=naver.com -->
+		</tr>
+		<tr>
+			<th>사진등록</th>
+			<td><label><input type='file'name='profile' value='파일선택'>
+			
+			</label></td>
+
+		</tr>
+		<tr>
+			<th colspan='2'><input type='submit' value='회원가입'>
+			<input type='reset' value='초기화'></th>
+			
+
+		</tr>
+		</table>
+</form>
+
+<p> input 태그에 autofocus 를 지정해 화면들어갔을떄 해당태그에 커서가 있게한다.</p>
+
+
+</body>
+</html>

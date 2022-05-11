@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+div{width:300px; border:1px solid;  margin:50px;}
+ul {list-style-type: none; padding:20px 30px}   /*위아래 20 좌우30*/
+#first ul li {border:1px solid; padding:20px; margin :5px;}
+ #second ul li {border:1px solid; padding:20px; margin-bottom :5px;}
+ #second ul li:nth-child(4) {margin-bottom: 0}
+	
+#second ul li{border:1px solid; padding:20px;}
+#second ul li{margin-bottom: 10px}
+#second ul li:last-child{margin-bottom: 0px}
+#second ul lu:not(:last-child) {
+margin-bottom: 10px	
+}
+
+.btn{text-decoration: none; color:pink; border: solid 1px black ; margin-top:100px; padding:3px 15px;
+border-radius:5px; background-color:black; box-shadow: 2px 2px 3px #022d72;
+display :inline-block; width:100px;
+}
+
+</style>
+</head>
+<body>
+<a class='btn' href= 'index.html'>홈으로</a>
+
+
+
+<div id='first'>
+<ul>
+<li>회사 소개</li>
+<li>도서</li>
+<li>자료실</li>
+<li>동영상 강의</li>
+</ul>
+</div>
+<div id='second'>
+<ul>
+<li>회사 소개</li>
+<li>도서</li>
+<li>자료실</li>
+<li>동영상 강의</li>
+</ul>
+</div>
+
+
+
+
+
+
+</body>
+</html>

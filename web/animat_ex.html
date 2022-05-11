@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style>
+#k-digital {
+	width: 1240px;
+	margin: 100px auto;
+}
+
+.slide-wrap {
+	width: 1240px;
+	height: 170px; 
+	overflow: hidden;
+	position: relative;
+}
+
+.slide ul {
+	list-style: none;
+	margin: 0;
+	padding: 0
+}
+
+.slide ul li {
+	float: left;
+	box-sizing: border-box;
+	background-color: #e6eeff;
+	
+}
+.slide li:not(:last-child){
+	margin-right: 20px;
+}
+.slide{position: absolute;width: 2500px;height: 170px}
+.training{width: 400px;height: 170px;border: 1px solid #ddd;}
+.traning div {margin: 15px}
+.traning img{float: left;}
+.traning strong{line-height: 48px; margin-left: 10px}
+.traning p {font-size: 15px;}
+#k-digital .slide{
+animation: k-digital 9s steps(3,start) 3s infinite;
+
+}
+@keyframes k-digital{
+from{left:0}to {left: -1260px}
+}
+</style>
+
+</head>
+<body>
+	<a href='index.html'>홈으로</a>
+	<div id='k-digital'>
+		<div class='slide-wrap'>
+			<div class='slide'>
+				<ul>
+					<li class='training'><div>
+							<img src='11.png'><strong>클래스</strong>
+							<p>1.일반적인 코드 개념에서 모듈에 해당하며 코드를 파일로 분리하여 작성하는 것
+2.객체지향 프로그래밍 언어인 자바에서는 연관되어 있는 메서드,변수들을 모아 놓은 집합 으로
+객체를 만들기 위한 설계도 역할 수행
+							
+							</p>
+						</div></li>
+					<li class='training'><img src='11.png'><strong>객체(object)</strong>
+						<p>1.객체지향 프로그래밍에서 실제로 구현해야 할 대산
+2.클래스를 사용하여 선언된 변수 상태
+
+						
+						</p></li>
+					<li class='training'><div>
+							<img src='11.png'><strong>인스턴스(instance)</strong>
+						</div><p>1.클래스를 바탕으로 선언된 object를 메모리에 탑재하고, 사용가능한 상태가 되는 구체적인 실체
+2.인스턴스는 객체에 포함되는 개념이지만, 객체는 아직 사용할 준비가 덜된 상태이고,인스턴스가
+되엇을때 객체의 메서드 등을 호출하여 실행할 수 있다.</p></li>
+					<li class='training'><div>
+							<img src='11.png'><strong>사물인터넷</strong>
+							<p></p>
+						</div></li>
+					<li class='training'><div>
+							<img src='11.png'><strong>정보보안</strong>
+						</div></li>
+					<li class='training'><div>
+							<img src='11.png'><strong>빅데이터</strong>
+						</div></li>
+				</ul>
+
+			</div>
+
+		</div>
+	</div>
+</body>
+</html>
